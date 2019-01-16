@@ -1,5 +1,6 @@
 q1chk = 0 #test is false for now
 q2chk = 0
+global grade
 grade = 0 # grade is 0
 a1 = 0
 a2 = 0
@@ -14,7 +15,8 @@ def ask_and_check(qText, qChk, aUser, aCorr):
             aUser = int(input(">>"))#answer one equal an integer input
             if aUser == aCorr:# if answer 1 equal 1
                 print ("Ok I got it")#tell user ok answer
-                #grade += 1#change grade by one
+                global grade
+                grade += 1#change grade by one
                 qChk = 1#escape condish
             elif 4 >= aUser >= 1:
                 print("Ok I got it")#tell user ok answer
@@ -43,3 +45,4 @@ What is the meaning of life the universe and everything?
 ask_and_check(q1, q1chk, a1, 1)
 ask_and_check(q2, q2chk, a2, 4)
 
+print("your grade is",grade,"/ 10") #print the grade
