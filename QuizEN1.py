@@ -130,4 +130,20 @@ ask_and_check(q7, q7chk, a7, 1)
 ask_and_check(q8, q8chk, a8, 4)
 ask_and_check(q9, q9chk, a9, 4)
 ask_and_check(q10, q10chk, a10, 1)
+
+
 print("your grade is",grade,"/ 10") #print the grade
+if grade == 10:
+    print ("you did it perfect")
+elif grade == 9:
+    print ("almost perfect oof 9/10")
+elif grade == 8:
+    print ("ok 8/10 very normal")
+elif 7 >= grade >= 6:
+    print ("ok, ok try a little harder")
+elif  5 >= grade >= 1:
+    print ("what a fail go try again")
+elif grade == 0:
+    print ("FFS try guessing next time you will get a better score")
+
+
